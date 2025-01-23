@@ -4,6 +4,19 @@ fun main() {
 
     //if - else (5)
 
+    val userInput = readLine()?.toIntOrNull()
+
+    if (userInput!= null){
+        if (userInput % 2 == 0){
+            println("Even number")
+        } else{
+            println("Odd number")
+        }
+    }
+
+    val input = readLine()?.toIntOrNull()?.let{if (it % 2 == 0) "Even number" else "Odd number" }
+    println(input)
+
     //when (5)
 
     //for (5)
